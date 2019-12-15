@@ -1,0 +1,5 @@
+package com.sergioramos.curso.service;
+
+public class UserService {
+
+}
