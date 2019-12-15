@@ -1,0 +1,5 @@
+package com.sergioramos.curso.repositories;
+
+public class UserRepository {
+
+}
