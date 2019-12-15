@@ -1,0 +1,5 @@
+package com.sergioramos.curso.entities.enums;
+
+public class OrderStatus {
+
+}

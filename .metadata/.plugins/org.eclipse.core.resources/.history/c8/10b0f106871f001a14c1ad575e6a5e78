@@ -35,21 +35,22 @@ public class Order implements Serializable {
 	public Order() {
 	}
 
-	public Order(Long id, Instant moment, OrderStatus orderStatus, User client) {
+	public Order(Long id, Instant moment, OrderStatus status, User client) {
 
 		this.id = id;
 		this.moment = moment;
 		this.client = client;
-		setOrderStatus(orderStatus);
+		this.status = status;
 	}
 
-	public OrderStatus getOrderStatus() {
+	public OrderStatus getStatus() {
+		// Usando o metodo implementado
 		return OrderStatus.valueOf(orderStatus);
 	}
 
-	public void setOrderStatus(OrderStatus orderStatus) {
+	public void setStatus(OrderStatus status) {
 		if (orderStatus != null) {
-			this.orderStatus = orderStatus.getCode();
+			this.orderStatus = status.getCode();
 		}
 	}
 

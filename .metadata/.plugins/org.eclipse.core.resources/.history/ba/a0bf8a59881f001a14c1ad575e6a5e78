@@ -44,12 +44,13 @@ public class Order implements Serializable {
 	}
 
 	public OrderStatus getOrderStatus() {
+		// Usando o metodo implementado
 		return OrderStatus.valueOf(orderStatus);
 	}
 
-	public void setOrderStatus(OrderStatus orderStatus) {
+	public void setOrderStatus(OrderStatus status) {
 		if (orderStatus != null) {
-			this.orderStatus = orderStatus.getCode();
+			this.orderStatus = status.getCode();
 		}
 	}
 
