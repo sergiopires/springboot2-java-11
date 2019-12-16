@@ -1,0 +1,5 @@
+package com.sergioramos.curso.entities;
+
+public class Product {
+
+}
